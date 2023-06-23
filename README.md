@@ -51,6 +51,7 @@ We have implemented the following main features:
 
 - **[Student Class]**
 - **[Teacher class]**
+- **[Decorator Pattern]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +96,7 @@ Commands:
 
 We plan to add the following features in future:
 
-- [ ] **[Decorate a class]**
+- [ ] **[Associations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
