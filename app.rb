@@ -18,12 +18,12 @@ class App
 
   def books_lists()
     puts 'All Books:'
-if @books.empty?
+    if @books.empty?
       puts 'No book available'
     else
-        @books.each do |book|
+      @books.each do |book|
         puts "Title: #{book.title}, Author: #{book.author}"
-        end
+      end
     end
   end
 
@@ -33,14 +33,14 @@ if @books.empty?
     if @person.empty?
       puts 'No people to show!'
     else
-        @person.each do |pn|
-            print "[#{pn.class}], Name: #{pn.name}, age: #{pn.age}, "
-            if pn.instance_of?(Teacher)
-                puts "Specialization: #{pn.specialization}"
-            else
-                puts "Permission: #{pn.parent_permission}"
-            end
+      @person.each do |pn|
+        print "[#{pn.class}], Name: #{pn.name}, age: #{pn.age}, "
+        if pn.instance_of?(Teacher)
+          puts "Specialization: #{pn.specialization}"
+        else
+          puts "Permission: #{pn.parent_permission}"
         end
+      end
     end
   end
 
@@ -56,14 +56,14 @@ if @books.empty?
     case person_type
     when 1
       print 'Parent permission [Y/N]: '
-      permission = gets.chomp.downcase == 'y'? true : false
+      permission = gets.chomp.downcase == 'y' ? true : false
       @person.push(Student.new(age, 0, permission, name))
 
     when 2
       print 'Specialization: '
       specialization = gets.chomp
-      permission =  true
-      teacher = Teacher.new(age, specialization, permission , name)
+      permission = true
+      teacher = Teacher.new(age, specialization, permission, name)
       @person << teacher
     end
 
