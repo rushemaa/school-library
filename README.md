@@ -97,7 +97,7 @@ Commands:
 
 We plan to add the following features in future:
 
-- [ ] **[Basic UI]**
+- [ ] **[More UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
