@@ -56,7 +56,7 @@ class App
     case person_type
     when 1
       print 'Parent permission [Y/N]: '
-      permission = gets.chomp.downcase == 'y' ? true : false
+      permission = gets.chomp.downcase == 'y'
       @person.push(Student.new(age, 0, permission, name))
 
     when 2
